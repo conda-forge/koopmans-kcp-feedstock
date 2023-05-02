@@ -1,5 +1,5 @@
 {% set name = "koopmans-kcp" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/epfl-theos/koopmans-kcp/archive/v{{ version }}.tar.gz
-  sha256: e3740eca2ba2feadddafefbda5a56584227f051250f477f6028a3408a3fe4665
+  sha256: 34aabc9fc4b4787a5be61d25290310e14b11a5077d19b30a30c2ad720afbb607
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/epfl-theos/koopmans-kcp
-  summary: 'Implementation of Koopmans functionals with full orbital optimization in Quantum ESPRESSO v4.1'
+  summary: Implementation of Koopmans functionals with full orbital optimization in Quantum ESPRESSO v4.1
   description: |
     koopmans-kcp is an implementation of Koopmans functionals in Quantum
     ESPRESSO v4.1 with full orbital optimization. Instead of using this
