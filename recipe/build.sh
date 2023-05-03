@@ -20,7 +20,7 @@ export DFLAGS="-D__FFTW3 -D__MPI -D__PARA"
 ./configure \
     --prefix=${PREFIX}
 
-make kcp
+make all
 export OMPI_MCA_plm_rsh_agent=sh
 make check
 make install
