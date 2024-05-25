@@ -10,12 +10,13 @@ source:
   sha256: 34aabc9fc4b4787a5be61d25290310e14b11a5077d19b30a30c2ad720afbb607
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('fortran') }}
     - openmpi
     - openmpi-mpifort
